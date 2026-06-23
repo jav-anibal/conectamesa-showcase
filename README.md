@@ -1,67 +1,82 @@
 # ConectaMesa
 
-Sistema de comanda digital y TPV para hostelería desarrollado con Java, Spring Boot, PostgreSQL, Flutter y Docker.
+Plataforma de comanda digital y TPV para hostelería desarrollada con Java, Spring Boot, PostgreSQL, Flutter y Docker.
 
 ![Funcionamiento](docs/asifuncionaelservicio.png)
 
-
-> Proyecto desarrollado inicialmente como Trabajo Final de DAM y actualmente evolucionando hacia una plataforma completa para la gestión de bares, cafeterías y restaurantes.
-
----
-
-# Problema
-
-Muchos negocios de hostelería siguen dependiendo de procesos manuales para la toma de pedidos, gestión de mesas y control de comandas.
-
-Esto provoca:
-
-* Errores en pedidos
-* Mayor carga de trabajo para camareros
-* Menor velocidad de atención
-* Dificultad para escalar operaciones
-
-ConectaMesa nace para digitalizar este flujo de trabajo mediante una plataforma integrada.
+> Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución hacia una solución integral para bares, cafeterías y restaurantes.
 
 ---
 
-# Solución
+# El problema
 
-ConectaMesa permite conectar clientes, camareros, cocina y personal de caja dentro de un mismo sistema.
+Muchos negocios de hostelería siguen dependiendo de procesos manuales para gestionar pedidos, coordinar camareros y controlar el estado de las mesas.
 
-El flujo principal es:
+Esto suele provocar:
+
+* Errores en comandas.
+* Pérdida de tiempo en desplazamientos.
+* Saturación de cocina en momentos de alta demanda.
+* Dificultad para controlar el servicio en tiempo real.
+
+ConectaMesa nace para digitalizar este flujo manteniendo el control operativo del restaurante.
+
+---
+
+# ¿Qué hace diferente a ConectaMesa?
+
+La mayoría de soluciones QR envían automáticamente los pedidos a cocina.
+
+ConectaMesa sigue una filosofía diferente:
+
+* El cliente puede consultar la carta y realizar pedidos desde su dispositivo.
+* El pedido queda registrado en el sistema.
+* El camarero mantiene el control sobre cuándo la comanda pasa a cocina o barra.
+
+Esto permite:
+
+* Evitar avalanchas de pedidos.
+* Mantener la coordinación del servicio.
+* Reducir errores operativos.
+* Adaptar el flujo al ritmo real del establecimiento.
+
+---
+
+# Flujo de funcionamiento
 
 1. El cliente escanea un código QR.
-2. Accede a la mesa mediante un PIN.
+2. Accede a una mesa mediante PIN.
 3. Consulta la carta digital.
 4. Realiza pedidos desde su dispositivo.
-5. Cocina o barra recibe las comandas.
-6. El personal gestiona pedidos y cobros desde TPV o PDA.
+5. El camarero revisa y valida la comanda.
+6. Cocina o barra recibe únicamente los pedidos confirmados.
+7. El TPV gestiona el cobro y cierre de la mesa.
 
 ---
 
-# Funcionalidades
+# Funcionalidades actuales
 
 ## Cliente
 
-* Acceso mediante QR
-* Unión a mesa mediante PIN
-* Carta digital
-* Realización de pedidos
-* Consulta de cuenta
+* Acceso mediante QR.
+* Unión a mesa mediante PIN.
+* Carta digital.
+* Creación de pedidos.
+* Consulta de cuenta.
 
 ## Personal
 
-* Gestión de mesas
-* Gestión de pedidos
-* Control de estados
-* PDA para camareros
-* TPV para cobros
+* Gestión de mesas.
+* Gestión de comandas.
+* Control de estados de pedido.
+* PDA para camareros.
+* TPV para cobros.
 
-## Cocina / Barra
+## Cocina y barra
 
-* Recepción de comandas
-* Gestión de preparación
-* Impresión térmica
+* Recepción de comandas.
+* Gestión de preparación.
+* Impresión térmica.
 
 ---
 
@@ -80,7 +95,7 @@ El flujo principal es:
 * Spring Data JPA
 * Hibernate
 
-## Base de Datos
+## Base de datos
 
 * PostgreSQL
 
@@ -91,56 +106,78 @@ El flujo principal es:
 
 ---
 
-# Tecnologías utilizadas
+# Capturas
 
-| Área                 | Tecnologías                       |
-| -------------------- | --------------------------------- |
-| Backend              | Java, Spring Boot, JPA, Hibernate |
-| Frontend             | Flutter                           |
-| Base de Datos        | PostgreSQL                        |
-| Infraestructura      | Docker, Docker Compose            |
-| Control de versiones | Git, GitHub                       |
+## PDA para camareros
+
+Interfaz móvil para localizar mesas que requieren atención y gestionar el servicio en tiempo real.
+
+![PDA](docs/pda.jpeg)
 
 ---
 
-# Capturas
-
-## Carta digital
-
-![Carta](docs/capturas/carta.png)
-
-## Gestión de mesas
-
-![Mesas](docs/capturas/mesas.png)
-
 ## TPV
 
-![TPV](docs/capturas/tpv.png)
+Pantalla principal utilizada por el personal para gestionar pedidos, mesas activas y cobros.
 
-## Cocina
+Características:
 
-![Cocina](docs/capturas/cocina.png)
+* Ticket en tiempo real.
+* Gestión de productos por categorías.
+* Control de cantidades.
+* División de cuenta.
+* Gestión simultánea de múltiples mesas.
+
+![TPV](docs/tpv.png)
+
+---
+
+# Objetivos técnicos
+
+Durante el desarrollo del proyecto se han trabajado conceptos como:
+
+* Diseño de APIs REST.
+* Modelado de dominio.
+* Persistencia con PostgreSQL.
+* Gestión de estados de negocio.
+* Arquitectura cliente-servidor.
+* Contenerización mediante Docker.
+* Comunicación entre aplicaciones Flutter y Spring Boot.
 
 ---
 
 # Evolución del proyecto
 
-Actualmente ConectaMesa continúa evolucionando hacia una solución TPV completa para hostelería.
+Actualmente ConectaMesa continúa evolucionando hacia una solución TPV completa.
 
-Líneas de desarrollo:
+Líneas de desarrollo activas:
 
-* Gestión avanzada de usuarios
-* Roles y permisos
-* Seguridad y autenticación
-* Estadísticas de negocio
-* Gestión de inventario
-* Multiestablecimiento
-* Plataforma SaaS
+* Roles y permisos.
+* Autenticación y seguridad.
+* Gestión avanzada de usuarios.
+* Estadísticas de negocio.
+* Gestión de inventario.
+* Multiestablecimiento.
+* Evolución hacia plataforma SaaS.
 
 ---
 
-# Nota
+# Mi papel en el proyecto
 
-Este repositorio es una versión Showcase destinada a presentar la arquitectura, funcionalidades y visión del producto.
+He participado en el diseño funcional y técnico de la plataforma, incluyendo:
 
-El código fuente principal permanece privado.
+* Diseño del modelo de dominio.
+* Arquitectura backend.
+* Desarrollo de APIs REST con Spring Boot.
+* Modelado de base de datos PostgreSQL.
+* Integración con Flutter.
+* Contenerización mediante Docker.
+* Definición de flujos de negocio y evolución funcional del producto.
+
+---
+
+# Sobre este repositorio
+
+Este repositorio es una versión Showcase creada para presentar la arquitectura, funcionalidades y visión del proyecto.
+
+El código fuente principal permanece privado mientras continúa su desarrollo.
