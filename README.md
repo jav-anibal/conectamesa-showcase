@@ -1,7 +1,9 @@
 # 🍽️ ConectaMesa
 
 Sistema de comanda digital y TPV para hostelería desarrollado con Java, Spring Boot, PostgreSQL, Flutter y Docker.
+
 ![Funcionamiento](docs/asifuncionaelservicio.png)
+
 
 > Proyecto desarrollado inicialmente como Trabajo Final de DAM y actualmente evolucionando hacia una plataforma completa para la gestión de bares, cafeterías y restaurantes.
 
