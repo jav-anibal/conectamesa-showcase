@@ -1,183 +1,151 @@
-# ConectaMesa
+<p align="center">
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="120">
+</p>
 
-Plataforma de comanda digital y TPV para hostelería desarrollada con Java, Spring Boot, PostgreSQL, Flutter y Docker.
+<h1 align="center">ConectaMesa</h1>
 
-![Funcionamiento](docs/asifuncionaelservicio.png)
+<p align="center">
+  Sistema de comanda digital y TPV para hostelería desarrollado con <strong>Java, Spring Boot, PostgreSQL, Flutter y Docker</strong>.
+</p>
 
-> Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución hacia una solución integral para bares, cafeterías y restaurantes.
+<p align="center">
+  Proyecto iniciado como Trabajo Final de DAM y actualmente evolucionando hacia una solución completa para la gestión de bares, cafeterías y restaurantes.
+</p>
 
----
-
-# El problema
-
-Muchos negocios de hostelería siguen dependiendo de procesos manuales para gestionar pedidos, coordinar camareros y controlar el estado de las mesas.
-
-Esto suele provocar:
-
-* Errores en comandas.
-* Pérdida de tiempo en desplazamientos.
-* Saturación de cocina en momentos de alta demanda.
-* Dificultad para controlar el servicio en tiempo real.
-
-ConectaMesa nace para digitalizar este flujo manteniendo el control operativo del restaurante.
+<p align="center">
+  <img src="docs/asifuncionaelservicio.png" alt="Funcionamiento" width="900">
+</p>
 
 ---
 
-# ¿Qué hace diferente a ConectaMesa?
+## El problema
 
-La mayoría de soluciones QR envían automáticamente los pedidos a cocina.
+Las soluciones de pedido por QR suelen enviar automáticamente todas las comandas a cocina.
 
-ConectaMesa sigue una filosofía diferente:
+En momentos de alta demanda esto puede provocar saturación, pérdida de control operativo y errores en el servicio.
 
-* El cliente puede consultar la carta y realizar pedidos desde su dispositivo.
-* El pedido queda registrado en el sistema.
-* El camarero mantiene el control sobre cuándo la comanda pasa a cocina o barra.
+## La propuesta
 
-Esto permite:
+ConectaMesa mantiene al camarero dentro del flujo operativo.
 
-* Evitar avalanchas de pedidos.
-* Mantener la coordinación del servicio.
-* Reducir errores operativos.
-* Adaptar el flujo al ritmo real del establecimiento.
+El cliente puede consultar la carta y realizar pedidos desde su móvil, pero es el personal quien decide cuándo una comanda pasa a cocina o barra.
+
+De esta forma se mejora la coordinación del servicio sin perder el control del negocio.
 
 ---
 
-# Flujo de funcionamiento
+## Ecosistema
 
-1. El cliente escanea un código QR.
-2. Accede a una mesa mediante PIN.
-3. Consulta la carta digital.
-4. Realiza pedidos desde su dispositivo.
-5. El camarero revisa y valida la comanda.
-6. Cocina o barra recibe únicamente los pedidos confirmados.
-7. El TPV gestiona el cobro y cierre de la mesa.
+### Cliente
 
----
+- Acceso mediante QR y PIN
+- Carta digital
+- Creación de pedidos
+- Consulta de cuenta
 
-# Funcionalidades actuales
+### PDA para camareros
 
-## Cliente
+- Gestión de mesas
+- Apertura de sesiones
+- Gestión de pedidos
+- Envío de comandas a cocina
 
-* Acceso mediante QR.
-* Unión a mesa mediante PIN.
-* Carta digital.
-* Creación de pedidos.
-* Consulta de cuenta.
+### TPV
 
-## Personal
+- Gestión de mesas activas
+- Operación de pedidos
+- Cobro de cuentas
+- Liberación automática de mesas
 
-* Gestión de mesas.
-* Gestión de comandas.
-* Control de estados de pedido.
-* PDA para camareros.
-* TPV para cobros.
+### Cocina y barra
 
-## Cocina y barra
-
-* Recepción de comandas.
-* Gestión de preparación.
-* Impresión térmica.
+- Recepción de comandas
+- Impresión térmica
+- Gestión de producción
 
 ---
 
-# Arquitectura
+## Arquitectura
 
-## Frontend
+### Backend
 
-* Flutter Web
-* Flutter Desktop
-* Flutter Mobile
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Hibernate
 
-## Backend
+### Frontend
 
-* Java 17
-* Spring Boot
-* Spring Data JPA
-* Hibernate
+- Flutter Web
+- Flutter Desktop
+- Flutter Mobile
 
-## Base de datos
+### Base de datos
 
-* PostgreSQL
+- PostgreSQL
 
-## Infraestructura
+### Infraestructura
 
-* Docker
-* Docker Compose
-
----
-
-# Capturas
-
-## PDA para camareros
-
-Interfaz móvil para localizar mesas que requieren atención y gestionar el servicio en tiempo real.
-
-![PDA](docs/pda.jpeg)
+- Docker
+- Docker Compose
 
 ---
 
-## TPV
+## Capturas
 
-Pantalla principal utilizada por el personal para gestionar pedidos, mesas activas y cobros.
+### PDA para camareros
 
-Características:
+<p align="center">
+  <img src="docs/capturaspda/pda.png" alt="PDA para camareros" width="300">
+</p>
 
-* Ticket en tiempo real.
-* Gestión de productos por categorías.
-* Control de cantidades.
-* División de cuenta.
-* Gestión simultánea de múltiples mesas.
+### TPV
 
-![TPV](docs/tpv.png)
-
----
-
-# Objetivos técnicos
-
-Durante el desarrollo del proyecto se han trabajado conceptos como:
-
-* Diseño de APIs REST.
-* Modelado de dominio.
-* Persistencia con PostgreSQL.
-* Gestión de estados de negocio.
-* Arquitectura cliente-servidor.
-* Contenerización mediante Docker.
-* Comunicación entre aplicaciones Flutter y Spring Boot.
+<p align="center">
+  <img src="docs/capturas/tpv.png" alt="TPV" width="700">
+</p>
 
 ---
 
-# Evolución del proyecto
+## Aspectos técnicos trabajados
 
-Actualmente ConectaMesa continúa evolucionando hacia una solución TPV completa.
-
-Líneas de desarrollo activas:
-
-* Roles y permisos.
-* Autenticación y seguridad.
-* Gestión avanzada de usuarios.
-* Estadísticas de negocio.
-* Gestión de inventario.
-* Multiestablecimiento.
-* Evolución hacia plataforma SaaS.
+- Diseño de APIs REST
+- Modelado de dominio
+- Gestión de estados de negocio
+- PostgreSQL
+- Docker
+- Arquitectura cliente-servidor
+- Integración Flutter + Spring Boot
+- Impresión térmica ESC/POS
 
 ---
 
-# Mi papel en el proyecto
+## Mi participación
 
-He participado en el diseño funcional y técnico de la plataforma, incluyendo:
-
-* Diseño del modelo de dominio.
-* Arquitectura backend.
-* Desarrollo de APIs REST con Spring Boot.
-* Modelado de base de datos PostgreSQL.
-* Integración con Flutter.
-* Contenerización mediante Docker.
-* Definición de flujos de negocio y evolución funcional del producto.
+- Diseño funcional del producto
+- Arquitectura backend
+- Desarrollo de APIs REST con Spring Boot
+- Modelado de base de datos PostgreSQL
+- Integración con Flutter
+- Dockerización del sistema
+- Diseño de flujos de negocio para hostelería
 
 ---
 
-# Sobre este repositorio
+## Estado actual
 
-Este repositorio es una versión Showcase creada para presentar la arquitectura, funcionalidades y visión del proyecto.
+El proyecto continúa evolucionando hacia una solución TPV completa con nuevas funcionalidades orientadas a:
+
+- Seguridad y control de accesos
+- Gestión empresarial avanzada
+- Analítica y métricas operativas
+- Multiestablecimiento
+- Modelo SaaS
+
+---
+
+## Nota
+
+Este repositorio es una versión **Showcase** creada para presentar la arquitectura, funcionalidades y visión del proyecto.
 
 El código fuente principal permanece privado mientras continúa su desarrollo.
