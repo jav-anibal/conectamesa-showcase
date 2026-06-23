@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="100">
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="300">
 </p>
 
 <h1 align="center">ConectaMesa</h1>
@@ -96,7 +96,7 @@ De esta forma se mejora la coordinación del servicio sin perder el control del 
 ### PDA para camareros
 
 <p align="center">
-  <img src="docs/capturas/pda/pda.jpeg" alt="PDA para camareros" width="100">
+  <img src="docs/capturas/pda/pda.jpeg" alt="PDA para camareros" width="250">
 </p>
 
 ### TPV
