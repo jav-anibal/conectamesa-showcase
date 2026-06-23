@@ -96,7 +96,7 @@ De esta forma se mejora la coordinación del servicio sin perder el control del 
 ### PDA para camareros
 
 <p align="center">
-  <img src="docs/capturas/pda/pda.png" alt="PDA para camareros" width="300">
+  <img src="docs/capturas/pda/pda.jpeg" alt="PDA para camareros" width="300">
 </p>
 
 ### TPV
