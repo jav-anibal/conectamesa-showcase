@@ -1,4 +1,4 @@
-# 🍽️ ConectaMesa
+# ConectaMesa
 
 Sistema de comanda digital y TPV para hostelería desarrollado con Java, Spring Boot, PostgreSQL, Flutter y Docker.
 
