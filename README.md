@@ -47,38 +47,18 @@ ConectaMesa mantiene la digitalización del proceso sin eliminar el papel operat
 El cliente puede consultar la carta y realizar pedidos desde su dispositivo móvil, pero el sistema incorpora mecanismos de control que regulan cuándo y cómo los pedidos avanzan hacia cocina y barra.
 
 ---
-
 ## Ecosistema
 
-### Cliente
+| Cliente                      | PDA Camarero           | TPV                      | Cocina y Barra           |
+| ---------------------------- | ---------------------- | ------------------------ | ------------------------ |
+| Acceso mediante QR           | Gestión de mesas       | Gestión de mesas activas | Recepción de comandas    |
+| Gestión mediante PIN de mesa | Gestión de pedidos     | Operaciones de cobro     | Visualización de pedidos |
+| Carta digital                | Envío de comandas      | Gestión de pedidos       | Gestión de estados       |
+| Creación de pedidos          | Supervisión operativa  | Control del servicio     | Impresión térmica        |
+| Consulta de cuenta           | Gestión de incidencias |                          |                          |
 
-- Acceso mediante QR
-- Gestión mediante PIN de mesa
-- Carta digital
-- Creación de pedidos
-- Consulta de cuenta
+---
 
-### PDA Camarero
-
-- Gestión de mesas
-- Gestión de pedidos
-- Envío de comandas
-- Supervisión operativa
-- Gestión de incidencias
-
-### TPV
-
-- Gestión de mesas activas
-- Operaciones de cobro
-- Gestión de pedidos
-- Control del servicio
-
-### Cocina y Barra
-
-- Recepción de comandas
-- Visualización de pedidos
-- Gestión de estados
-- Impresión térmica
 
 ---
 
