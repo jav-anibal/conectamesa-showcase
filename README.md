@@ -5,7 +5,7 @@
 ## Cómo funciona
 
 <p align="center">
-  <img src="docs/servicio/asifuncionaelservicio.png" width="1000">
+  <img src="docs/capturas/servicio/asifuncionaelservicio.png" width="1000">
 </p>
 
 **Sistema de gestión operativa para hostelería que combina carta digital, PDA para camareros, TPV y monitor de cocina en una única plataforma.**
