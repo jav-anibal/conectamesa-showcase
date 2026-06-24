@@ -1,16 +1,17 @@
 # ConectaMesa
 
 <p align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="80">
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="120">
 </p>
 
 <p align="center">
-  Sistema de gestión operativa para hostelería desarrollado con Java, Spring Boot, PostgreSQL, Flutter y Docker.
+  Plataforma integral para la gestión digital de bares, cafeterías y restaurantes.
 </p>
 
 <p align="center">
-  Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución como plataforma de gestión para bares, cafeterías y restaurantes.
+  Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución.
 </p>
+
 
 ---
 
