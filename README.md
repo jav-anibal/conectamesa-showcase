@@ -1,7 +1,7 @@
 # ConectaMesa
 
 <p align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="250">
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="80">
 </p>
 
 <p align="center">
