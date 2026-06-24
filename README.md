@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 -->
+
 # ConectaMesa
 
 <table>
@@ -14,9 +16,6 @@ Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución.
 </td>
 </tr>
 </table>
-
----
-
 
 ---
 
