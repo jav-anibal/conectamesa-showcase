@@ -2,29 +2,22 @@
 
 # ConectaMesa
 
-<table>
-<tr>
-<td width="140" align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="100">
-</td>
-<td>
+## Cómo funciona
 
-**Plataforma integral para la gestión digital de bares, cafeterías y restaurantes.**
+<p align="center">
+  <img src="docs/servicio/asifuncionaelservicio.png" width="1000">
+</p>
+
+**Sistema de gestión operativa para hostelería que combina carta digital, PDA para camareros, TPV y monitor de cocina en una única plataforma.**
 
 Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución.
-
-</td>
-</tr>
-</table>
 
 ---
 
 ## ¿Qué es ConectaMesa?
 
 ConectaMesa no es únicamente una carta digital ni un TPV.
-
 Es un sistema diseñado para coordinar clientes, camareros, cocina y caja dentro de un mismo flujo operativo.
-
 Su objetivo es mejorar la gestión de pedidos sin perder el control del servicio.
 
 ---
@@ -32,9 +25,7 @@ Su objetivo es mejorar la gestión de pedidos sin perder el control del servicio
 ## Problema
 
 Durante las pruebas realizadas en establecimientos de hostelería observé un problema común:
-
 Muchos sistemas de autocomanda permiten que los clientes envíen pedidos directamente a cocina.
-
 Cuando varios clientes realizan pedidos simultáneamente aparecen problemas operativos:
 
 - Saturación de cocina
@@ -72,6 +63,14 @@ El cliente puede consultar la carta y realizar pedidos desde su dispositivo móv
 <p align="center">
   <img src="docs/capturas/tpv/tpv.png" width="800">
 </p>
+
+---
+
+## Diferenciador
+
+A diferencia de muchos sistemas de autocomanda, ConectaMesa no envía automáticamente los pedidos a cocina.
+El cliente puede realizar pedidos desde su dispositivo móvil, pero el personal mantiene el control sobre cuándo una comanda entra en producción.
+Este enfoque reduce saturaciones, evita avalanchas de tickets y mejora la coordinación entre sala, cocina y barra.
 
 ---
 
@@ -167,24 +166,6 @@ Responsabilidades principales:
 **Infraestructura:** Docker · Docker Compose · Nginx
 
 **Herramientas:** Git · GitHub · Postman
-
----
-
-
----
-
-## Estado Actual
-
-Actualmente ConectaMesa continúa evolucionando como plataforma de gestión para hostelería.
-
-Líneas de evolución previstas:
-
-- Gestión avanzada de usuarios
-- Control de accesos
-- Multiestablecimiento
-- Analítica operativa
-- Métricas de negocio
-- Modelo SaaS
 
 ---
 
