@@ -1,7 +1,7 @@
 # ConectaMesa
 
 <p align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="280">
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="250">
 </p>
 
 <p align="center">
@@ -99,32 +99,15 @@ El cliente puede consultar la carta y realizar pedidos desde su dispositivo móv
 
 ## Componentes Principales
 
-### Gestión de Mesas
+| Componente            | Responsabilidades                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| Gestión de Mesas   | Apertura de mesa, gestión de comensales, generación de PIN y control de sesión activa |
+| Gestión de Pedidos | Creación y gestión de pedidos, líneas de pedido, confirmación y estados de negocio    |
+| Gestión Operativa  | Coordinación entre sala, cocina y barra, monitorización y validaciones de servicio    |
+| Gestión de Pagos   | Solicitud de cuenta, registro de cobros y liberación de mesa                          |
 
-- Apertura de mesa
-- Gestión de comensales
-- Generación de PIN
-- Control de sesión activa
+---
 
-### Gestión de Pedidos
-
-- Creación de pedidos
-- Gestión de líneas
-- Confirmación de pedido
-- Estados de negocio
-
-### Gestión Operativa
-
-- Control de flujo de pedidos
-- Gestión de cocina y barra
-- Monitor operativo
-- Validaciones de servicio
-
-### Gestión de Pagos
-
-- Solicitud de cuenta
-- Registro de cobros
-- Liberación de mesa
 
 ---
 
