@@ -9,7 +9,6 @@
 </p>
 
 **Sistema de gestión operativa para hostelería que combina carta digital, PDA para camareros, TPV y monitor de cocina en una única plataforma.**
-
 Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución.
 
 ---
