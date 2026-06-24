@@ -97,34 +97,26 @@ El cliente puede consultar la carta y realizar pedidos desde su dispositivo móv
 </p>
 
 ---
-
 ## Arquitectura
 
 ### Backend
-
-- Java 17
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- REST API
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green)
+![JPA](https://img.shields.io/badge/JPA-Hibernate-blue)
 
 ### Frontend
-
-- Flutter
-- Flutter Web
-- Flutter Desktop
-- Flutter Mobile
+![Flutter](https://img.shields.io/badge/Flutter-Framework-blue)
+![Web](https://img.shields.io/badge/Web-Supported-success)
+![Desktop](https://img.shields.io/badge/Desktop-Supported-success)
+![Mobile](https://img.shields.io/badge/Mobile-Supported-success)
 
 ### Base de Datos
-
-- PostgreSQL
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
 
 ### Infraestructura
-
-- Docker
-- Docker Compose
-- Nginx
-
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-Orchestration-blue)
+![Nginx](https://img.shields.io/badge/Nginx-Reverse_Proxy-green)
 ---
 
 ## Componentes Principales
