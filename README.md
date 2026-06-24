@@ -65,7 +65,7 @@ El cliente puede consultar la carta y realizar pedidos desde su dispositivo móv
 ### TPV
 
 <p align="center">
-  <img src="docs/capturas/tpv.png" width="800">
+  <img src="docs/capturas/tpv/tpv.png" width="800">
 </p>
 
 ---
