@@ -1,36 +1,50 @@
-<p align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="300">
-</p>
-
-<h1 align="center">ConectaMesa</h1>
+# ConectaMesa
 
 <p align="center">
-  Sistema de comanda digital y TPV para hostelería desarrollado con <strong>Java, Spring Boot, PostgreSQL, Flutter y Docker</strong>.
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="280">
 </p>
 
 <p align="center">
-  Proyecto iniciado como Trabajo Final de DAM y actualmente evolucionando hacia una solución completa para la gestión de bares, cafeterías y restaurantes.
+  Sistema de gestión operativa para hostelería desarrollado con Java, Spring Boot, PostgreSQL, Flutter y Docker.
 </p>
 
 <p align="center">
-  <img src="docs/asifuncionaelservicio.png" alt="Funcionamiento" width="900">
+  Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución como plataforma de gestión para bares, cafeterías y restaurantes.
 </p>
 
 ---
 
-## El problema
+## ¿Qué es ConectaMesa?
 
-Las soluciones de pedido por QR suelen enviar automáticamente todas las comandas a cocina.
+ConectaMesa no es únicamente una carta digital ni un TPV.
 
-En momentos de alta demanda esto puede provocar saturación, pérdida de control operativo y errores en el servicio.
+Es un sistema diseñado para coordinar clientes, camareros, cocina y caja dentro de un mismo flujo operativo.
 
-## La propuesta
+Su objetivo es mejorar la gestión de pedidos sin perder el control del servicio.
 
-ConectaMesa mantiene al camarero dentro del flujo operativo.
+---
 
-El cliente puede consultar la carta y realizar pedidos desde su móvil, pero es el personal quien decide cuándo una comanda pasa a cocina o barra.
+## Problema
 
-De esta forma se mejora la coordinación del servicio sin perder el control del negocio.
+Durante las pruebas realizadas en establecimientos de hostelería observé un problema común:
+
+Muchos sistemas de autocomanda permiten que los clientes envíen pedidos directamente a cocina.
+
+Cuando varios clientes realizan pedidos simultáneamente aparecen problemas operativos:
+
+- Saturación de cocina
+- Acumulación de tickets
+- Pérdida de control del servicio
+- Errores en pedidos
+- Aumento de tiempos de espera
+
+---
+
+## Solución
+
+ConectaMesa mantiene la digitalización del proceso sin eliminar el papel operativo del camarero.
+
+El cliente puede consultar la carta y realizar pedidos desde su dispositivo móvil, pero el sistema incorpora mecanismos de control que regulan cuándo y cómo los pedidos avanzan hacia cocina y barra.
 
 ---
 
@@ -38,30 +52,49 @@ De esta forma se mejora la coordinación del servicio sin perder el control del 
 
 ### Cliente
 
-- Acceso mediante QR y PIN
+- Acceso mediante QR
+- Gestión mediante PIN de mesa
 - Carta digital
 - Creación de pedidos
 - Consulta de cuenta
 
-### PDA para camareros
+### PDA Camarero
 
 - Gestión de mesas
-- Apertura de sesiones
 - Gestión de pedidos
-- Envío de comandas a cocina
+- Envío de comandas
+- Supervisión operativa
+- Gestión de incidencias
 
 ### TPV
 
 - Gestión de mesas activas
-- Operación de pedidos
-- Cobro de cuentas
-- Liberación automática de mesas
+- Operaciones de cobro
+- Gestión de pedidos
+- Control del servicio
 
-### Cocina y barra
+### Cocina y Barra
 
 - Recepción de comandas
+- Visualización de pedidos
+- Gestión de estados
 - Impresión térmica
-- Gestión de producción
+
+---
+
+## Capturas
+
+### PDA Camarero
+
+<p align="center">
+  <img src="docs/capturas/pda/pda_V22.jpg" width="250">
+</p>
+
+### TPV
+
+<p align="center">
+  <img src="docs/capturas/tpv.png" width="800">
+</p>
 
 ---
 
@@ -73,14 +106,16 @@ De esta forma se mejora la coordinación del servicio sin perder el control del 
 - Spring Boot
 - Spring Data JPA
 - Hibernate
+- REST API
 
 ### Frontend
 
+- Flutter
 - Flutter Web
 - Flutter Desktop
 - Flutter Mobile
 
-### Base de datos
+### Base de Datos
 
 - PostgreSQL
 
@@ -88,64 +123,142 @@ De esta forma se mejora la coordinación del servicio sin perder el control del 
 
 - Docker
 - Docker Compose
+- Nginx
 
 ---
 
-## Capturas
+## Componentes Principales
 
-### PDA para camareros
+### Gestión de Mesas
 
-<p align="center">
-  <img src="docs/capturas/pda/pda_V22.jpg" alt="PDA para camareros" width="250">
-</p>
+- Apertura de mesa
+- Gestión de comensales
+- Generación de PIN
+- Control de sesión activa
 
-### TPV
+### Gestión de Pedidos
 
-<p align="center">
-  <img src="docs/capturas/tpv.png" alt="TPV" width="700">
-</p>
+- Creación de pedidos
+- Gestión de líneas
+- Confirmación de pedido
+- Estados de negocio
+
+### Gestión Operativa
+
+- Control de flujo de pedidos
+- Gestión de cocina y barra
+- Monitor operativo
+- Validaciones de servicio
+
+### Gestión de Pagos
+
+- Solicitud de cuenta
+- Registro de cobros
+- Liberación de mesa
 
 ---
 
-## Aspectos técnicos trabajados
+## Aspectos Técnicos Trabajados
 
 - Diseño de APIs REST
-- Modelado de dominio
-- Gestión de estados de negocio
-- PostgreSQL
-- Docker
 - Arquitectura cliente-servidor
-- Integración Flutter + Spring Boot
+- Modelado de dominio
+- PostgreSQL
+- JPA / Hibernate
+- Dockerización
+- Flutter
+- Gestión de estados de negocio
+- Integración TPV + PDA + Cliente
 - Impresión térmica ESC/POS
+- Git y control de versiones
 
 ---
 
-## Mi participación
+## Mi Participación
+
+Proyecto desarrollado como iniciativa personal.
+
+Responsabilidades principales:
 
 - Diseño funcional del producto
+- Análisis de necesidades operativas de hostelería
 - Arquitectura backend
-- Desarrollo de APIs REST con Spring Boot
-- Modelado de base de datos PostgreSQL
-- Integración con Flutter
-- Dockerización del sistema
-- Diseño de flujos de negocio para hostelería
+- Desarrollo de APIs REST
+- Diseño de base de datos PostgreSQL
+- Desarrollo frontend Flutter
+- Dockerización de la plataforma
+- Definición de reglas de negocio
+- Diseño de flujos operativos
 
 ---
 
-## Estado actual
+## Tecnologías Utilizadas
 
-El proyecto continúa evolucionando hacia una solución TPV completa con nuevas funcionalidades orientadas a:
+### Backend
 
-- Seguridad y control de accesos
-- Gestión empresarial avanzada
-- Analítica y métricas operativas
+- Java
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- Lombok
+
+### Base de Datos
+
+- PostgreSQL
+
+### Frontend
+
+- Flutter
+- Dart
+
+### Infraestructura
+
+- Docker
+- Docker Compose
+- Nginx
+
+### Herramientas
+
+- Git
+- GitHub
+- Postman
+
+---
+
+## Estado Actual
+
+Actualmente ConectaMesa continúa evolucionando como plataforma de gestión para hostelería.
+
+Líneas de evolución previstas:
+
+- Gestión avanzada de usuarios
+- Control de accesos
 - Multiestablecimiento
+- Analítica operativa
+- Métricas de negocio
 - Modelo SaaS
 
 ---
 
-## Nota
+## Repositorio Showcase
 
-Este repositorio es una versión **Showcase** creada para presentar la arquitectura, funcionalidades y visión del proyecto.
+Este repositorio es una versión Showcase creada con fines profesionales.
 
-El código fuente principal permanece privado mientras continúa su desarrollo.
+Su objetivo es mostrar la arquitectura, funcionalidades y tecnologías utilizadas en el proyecto sin exponer componentes internos de la plataforma completa.
+
+---
+
+## Contacto
+
+LinkedIn
+
+www.linkedin.com/in/anibal-solano-f
+
+GitHub
+
+https://github.com/jav-anibal
+
+---
+
+Desarrollado por Aníbal Solano
+DAM · ASIR · Backend Developer
