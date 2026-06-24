@@ -60,8 +60,6 @@ El cliente puede consultar la carta y realizar pedidos desde su dispositivo móv
 ---
 
 
----
-
 ## Capturas
 
 ### PDA Camarero
