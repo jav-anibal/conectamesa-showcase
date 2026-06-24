@@ -47,20 +47,14 @@ ConectaMesa mantiene la digitalización del proceso sin eliminar el papel operat
 El cliente puede consultar la carta y realizar pedidos desde su dispositivo móvil, pero el sistema incorpora mecanismos de control que regulan cuándo y cómo los pedidos avanzan hacia cocina y barra.
 
 ---
-## Ecosistema
-
-| Cliente                      | PDA Camarero           | TPV                      | Cocina y Barra           |
-| ---------------------------- | ---------------------- | ------------------------ | ------------------------ |
-| Acceso mediante QR           | Gestión de mesas       | Gestión de mesas activas | Recepción de comandas    |
-| Gestión mediante PIN de mesa | Gestión de pedidos     | Operaciones de cobro     | Visualización de pedidos |
-| Carta digital                | Envío de comandas      | Gestión de pedidos       | Gestión de estados       |
-| Creación de pedidos          | Supervisión operativa  | Control del servicio     | Impresión térmica        |
-| Consulta de cuenta           | Gestión de incidencias |                          |                          |
-
----
-
 
 ## Capturas
+
+### AutoComanda Comensal
+
+<p align="center">
+  <img src="docs/capturas/autocomanda/autocomanda.jpeg" width="250">
+</p>
 
 ### PDA Camarero
 
@@ -75,6 +69,18 @@ El cliente puede consultar la carta y realizar pedidos desde su dispositivo móv
 </p>
 
 ---
+
+## Ecosistema
+
+| Cliente                      | PDA Camarero           | TPV                      | Cocina y Barra           |
+| ---------------------------- | ---------------------- | ------------------------ | ------------------------ |
+| Acceso mediante QR           | Gestión de mesas       | Gestión de mesas activas | Recepción de comandas    |
+| Gestión mediante PIN de mesa | Gestión de pedidos     | Operaciones de cobro     | Visualización de pedidos |
+| Carta digital                | Envío de comandas      | Gestión de pedidos       | Gestión de estados       |
+| Creación de pedidos          | Supervisión operativa  | Control del servicio     | Impresión térmica        |
+| Consulta de cuenta           | Gestión de incidencias |                          |                          |
+
+--- 
 ## Arquitectura
 
 ### Backend
