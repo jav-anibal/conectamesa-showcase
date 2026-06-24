@@ -186,34 +186,18 @@ Responsabilidades principales:
 
 ## Tecnologías Utilizadas
 
-### Backend
+**Backend:** Java · Spring Boot · Spring Data JPA · Hibernate · Lombok
 
-- Java
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- Lombok
+**Base de Datos:** PostgreSQL
 
-### Base de Datos
+**Frontend:** Flutter · Dart
 
-- PostgreSQL
+**Infraestructura:** Docker · Docker Compose · Nginx
 
-### Frontend
+**Herramientas:** Git · GitHub · Postman
 
-- Flutter
-- Dart
+---
 
-### Infraestructura
-
-- Docker
-- Docker Compose
-- Nginx
-
-### Herramientas
-
-- Git
-- GitHub
-- Postman
 
 ---
 
