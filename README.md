@@ -1,16 +1,21 @@
 # ConectaMesa
 
-<p align="center">
-  <img src="docs/logo/logo.png" alt="ConectaMesa" width="120">
-</p>
+<table>
+<tr>
+<td width="140" align="center">
+  <img src="docs/logo/logo.png" alt="ConectaMesa" width="100">
+</td>
+<td>
 
-<p align="center">
-  Plataforma integral para la gestión digital de bares, cafeterías y restaurantes.
-</p>
+**Plataforma integral para la gestión digital de bares, cafeterías y restaurantes.**
 
-<p align="center">
-  Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución.
-</p>
+Proyecto iniciado como Trabajo Final de DAM y actualmente en evolución.
+
+</td>
+</tr>
+</table>
+
+---
 
 
 ---
@@ -194,15 +199,10 @@ Su objetivo es mostrar la arquitectura, funcionalidades y tecnologías utilizada
 
 ## Contacto
 
-LinkedIn
+**LinkedIn -**  www.linkedin.com/in/anibal-solano-f
 
-www.linkedin.com/in/anibal-solano-f
-
-GitHub
-
-https://github.com/jav-anibal
+**GitHub -** https://github.com/jav-anibal
 
 ---
-
-Desarrollado por Aníbal Solano
+**Desarrollado por Anibal Solano**
 DAM · ASIR · Backend Developer
