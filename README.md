@@ -1,6 +1,43 @@
 <!-- markdownlint-disable MD033 -->
 
-# ConectaMesa — Backend Architecture Case Study
+<p align="center">
+  <img src="docs/logo/logo.png" width="100" alt="Logotipo de ConectaMesa">
+</p>
+
+<h1 align="center">ConectaMesa</h1>
+
+<p align="center"><em>Pide en grupo desde el móvil. El camarero decide cuándo entra en cocina.</em></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+</p>
+
+<p align="center">
+  <img src="docs/media/demo.gif" width="240" alt="Demostración: el cliente abre la mesa con un PIN, pide desde el móvil, el pedido llega a la PDA del camarero y sale el ticket en la impresora de cocina">
+</p>
+
+<!-- PENDIENTE (D-1 y OT-DEMO-01): activar cuando existan los enlaces.
+<p align="center">
+  <a href="URL_VIDEO">Ver vídeo completo</a> · <a href="URL_DEMO">Probar la demo</a>
+</p>
+-->
+
+<p align="center">
+  <img src="docs/capturas/servicio/asifuncionaelservicio.png" width="1000" alt="Infografía en tres pasos: un PIN abre la mesa, todos piden desde su móvil en un único pedido compartido, y el camarero lo envía a cocina cuando toca">
+</p>
+
+---
+
+## Qué hace diferente a ConectaMesa
+
+- Una **mesa virtual compartida** que se abre con un **PIN**: todos los comensales se unen y añaden al mismo pedido.
+- El cliente pide con libertad, pero **el camarero (PDA) decide cuándo el pedido sale a cocina**, donde se imprime en la impresora térmica.
+- Pensado para evitar la avalancha de comandas en cocina.
+
+## Para perfiles técnicos
 
 **Caso de estudio técnico de una plataforma de gestión operativa para hostelería.**
 
@@ -9,10 +46,6 @@ ConectaMesa nació como proyecto final de DAM y evolucionó hacia un sistema que
 > Este repositorio público documenta arquitectura, decisiones y experiencia de producto. La implementación completa, configuración de infraestructura y lógica propietaria permanecen privadas.
 
 ## Contexto
-
-<p align="center">
-  <img src="docs/capturas/servicio/asifuncionaelservicio.png" width="1000">
-</p>
 
 En un servicio de hostelería, digitalizar la toma de pedidos no consiste únicamente en enviar información desde un móvil. El sistema debe coordinar varios actores y mantener consistencia mientras cambian mesas, sesiones, pedidos y estados operativos.
 
@@ -29,7 +62,8 @@ flowchart LR
     S --> JPA[JPA / Hibernate]
     JPA --> DB[(PostgreSQL)]
     S --> O[Adaptadores operativos]
-    API --> M[Monitor Cocina / Barra]
+    O --> I[Impresión térmica ESC/POS - cocina]
+    API -.-> M[Monitor cocina / barra - opcional]
 ```
 
 La implementación utiliza una arquitectura por capas para separar transporte HTTP, reglas de negocio y persistencia relacional.
@@ -103,7 +137,7 @@ Para revisar código Java ejecutable y una suite pública con JUnit 5, Mockito y
 
 **Infraestructura:** Docker · Docker Compose · Nginx
 
-**Clientes:** Flutter Web / Mobile / Desktop
+**Clientes:** Flutter Web, probada en móviles desde el navegador
 
 **Testing:** JUnit 5 · Mockito · pruebas de integración y concurrencia
 
@@ -114,7 +148,7 @@ Para revisar código Java ejecutable y una suite pública con JUnit 5, Mockito y
 | Carta / Cliente | Consulta de catálogo y creación de pedidos |
 | PDA | Operación de sala y gestión de mesas |
 | TPV | Gestión operativa y cobro |
-| Cocina / Barra | Seguimiento del trabajo de producción |
+| Cocina / Barra | Impresión térmica de comandas en cocina (monitor opcional) |
 | Backend | Reglas de negocio, consistencia y persistencia |
 
 ## Capturas
@@ -122,19 +156,19 @@ Para revisar código Java ejecutable y una suite pública con JUnit 5, Mockito y
 ### AutoComanda
 
 <p align="center">
-  <img src="docs/capturas/autocomanda/autocomanda.jpeg" width="250">
+  <img src="docs/capturas/autocomanda/autocomanda.jpeg" width="250" alt="Pantalla de entrada del comensal en el móvil: selector de idioma y teclado para introducir el número de mesa">
 </p>
 
 ### PDA
 
 <p align="center">
-  <img src="docs/capturas/pda/pda_V22.jpg" width="250">
+  <img src="docs/capturas/pda/pda_V22.jpg" width="250" alt="Centro de atención de la PDA del camarero, con el listado de mesas activas y teclado para ir a una mesa">
 </p>
 
 ### TPV
 
 <p align="center">
-  <img src="docs/capturas/tpv/tpv.png" width="800">
+  <img src="docs/capturas/tpv/tpv.png" width="800" alt="Pantalla del TPV con la carta por categorías, teclado numérico y botón para abrir mesa">
 </p>
 
 ## Mi participación
@@ -153,11 +187,17 @@ Responsabilidades principales:
 - diseño y ejecución de pruebas;
 - evolución del producto a partir de pruebas operativas.
 
+## Estado y próximos pasos
+
+Prototipo validado en red local con hardware real. La evolución prevista incluye endurecer la seguridad y el control de acceso, mejorar la precisión de los importes, gestionar la evolución del esquema de datos y automatizar la verificación continua.
+
 ## Alcance de este repositorio
 
 Este repositorio es deliberadamente un **case study**, no una distribución open-source del producto.
 
 Su finalidad es permitir evaluar las decisiones de ingeniería y el alcance del sistema sin publicar código propietario, configuración operativa ni componentes que permitan reconstruir la plataforma completa.
+
+Véase [LICENSE](LICENSE): todos los derechos reservados.
 
 ---
 
