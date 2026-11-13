@@ -56,7 +56,8 @@ flowchart LR
     S --> JPA[JPA / Hibernate]
     JPA --> DB[(PostgreSQL)]
     S --> O[Adaptadores operativos]
-    API --> M[Monitor Cocina / Barra]
+    O --> I[Impresión térmica ESC/POS - cocina]
+    API -.-> M[Monitor cocina / barra - opcional]
 ```
 
 La implementación utiliza una arquitectura por capas para separar transporte HTTP, reglas de negocio y persistencia relacional.
@@ -130,7 +131,7 @@ Para revisar código Java ejecutable y una suite pública con JUnit 5, Mockito y
 
 **Infraestructura:** Docker · Docker Compose · Nginx
 
-**Clientes:** Flutter Web / Mobile / Desktop
+**Clientes:** Flutter Web, probada en móviles desde el navegador
 
 **Testing:** JUnit 5 · Mockito · pruebas de integración y concurrencia
 
@@ -141,7 +142,7 @@ Para revisar código Java ejecutable y una suite pública con JUnit 5, Mockito y
 | Carta / Cliente | Consulta de catálogo y creación de pedidos |
 | PDA | Operación de sala y gestión de mesas |
 | TPV | Gestión operativa y cobro |
-| Cocina / Barra | Seguimiento del trabajo de producción |
+| Cocina / Barra | Impresión térmica de comandas en cocina (monitor opcional) |
 | Backend | Reglas de negocio, consistencia y persistencia |
 
 ## Capturas
