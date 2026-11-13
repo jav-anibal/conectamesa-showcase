@@ -187,6 +187,10 @@ Responsabilidades principales:
 - diseño y ejecución de pruebas;
 - evolución del producto a partir de pruebas operativas.
 
+## Estado y próximos pasos
+
+Prototipo validado en red local con hardware real. La evolución prevista incluye endurecer la seguridad y el control de acceso, mejorar la precisión de los importes, gestionar la evolución del esquema de datos y automatizar la verificación continua.
+
 ## Alcance de este repositorio
 
 Este repositorio es deliberadamente un **case study**, no una distribución open-source del producto.
