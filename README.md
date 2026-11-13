@@ -9,10 +9,10 @@
 <p align="center"><em>Pide en grupo desde el móvil. El camarero decide cuándo entra en cocina.</em></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-Framework-blue" alt="Flutter">
-  <img src="https://img.shields.io/badge/Spring_Boot-3.x-green" alt="Spring Boot">
-  <img src="https://img.shields.io/badge/PostgreSQL-Database-blue" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/Docker-Containerization-blue" alt="Docker">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 </p>
 
 <p align="center">
