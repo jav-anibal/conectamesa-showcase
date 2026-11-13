@@ -31,6 +31,12 @@
 
 ---
 
+## Qué hace diferente a ConectaMesa
+
+- Una **mesa virtual compartida** que se abre con un **PIN**: todos los comensales se unen y añaden al mismo pedido.
+- El cliente pide con libertad, pero **el camarero (PDA) decide cuándo el pedido sale a cocina**, donde se imprime en la impresora térmica.
+- Pensado para evitar la avalancha de comandas en cocina.
+
 ## Para perfiles técnicos
 
 **Caso de estudio técnico de una plataforma de gestión operativa para hostelería.**
