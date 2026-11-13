@@ -197,6 +197,8 @@ Este repositorio es deliberadamente un **case study**, no una distribución open
 
 Su finalidad es permitir evaluar las decisiones de ingeniería y el alcance del sistema sin publicar código propietario, configuración operativa ni componentes que permitan reconstruir la plataforma completa.
 
+Véase [LICENSE](LICENSE): todos los derechos reservados.
+
 ---
 
 **Anibal Solano**  
